@@ -1,0 +1,9 @@
+//code for workcube 
+
+#include <PRIZM.h>   //link up the library
+PRIZM prizm;        //declare object (refence to prism)
+
+void setup(){
+}
+void loop (){
+}
