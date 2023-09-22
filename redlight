@@ -1,0 +1,19 @@
+//code for workcube 
+
+#include <PRIZM.h>   //link up the library
+PRIZM prizm;        //declare object (refence to prism)
+
+void setup(){
+  prizm.PrizmBegin();
+}
+void loop (){
+  prizm.setGreenLED(1);
+  delay(1000);
+  prizm.setMotorPower(1,100); //100% speed
+  delay(2000);
+  prizm.setGreenLED(0);
+  prizm.setMotorPower(1,125); //125 means brake
+  prizm.setRedLED(1);
+  delay(1000);
+  prizm.setRedLED(0);
+}
